@@ -1,0 +1,21 @@
+<div class="cuerpo">
+<h2>Listado de Escritores</h2>
+    <select  name="escritor" [(ngModel)]="seleccionado">
+        <option *ngFor="let item of todosescritores" [ngValue]="item.pais">
+         {{ item.pais }}
+        </option>
+      </select>
+      
+      <button type="button" (click)="enviar()">Por Pais</button>	
+    
+      <div  class="container">
+    <div *ngFor="let item of todosescritores " [routerLink]="['/escritor', item.id]" class="card">
+    {{item.nombre}}
+    <img [src]=item.imagen style="width: 100%" alt="">
+    {{item.apellidos}}
+    <b> {{item.pais}}</b>
+    
+    </div>
+    
+      </div>
+</div>

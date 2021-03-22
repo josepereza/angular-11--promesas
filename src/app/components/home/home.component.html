@@ -1,0 +1,50 @@
+<div class="principal">
+
+    <h1>Promesas</h1>
+
+    <h2>Listado Completo</h2>
+    
+    
+    <table>
+        <tr>
+            <th>Nombre </th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+            <th>Activo</th>
+        </tr>
+        <tr *ngFor="let item of arrayPersonas">
+            <td>{{item.nombre}}</td>
+            <td>{{item.apellidos}}</td>
+            <td>{{item.edad}}</td>
+            <td>{{item.activo}}</td>
+    
+        </tr>
+    
+    </table>
+    
+    
+    <h2>Listado de Activos</h2>
+    
+    
+    <table>
+        <tr>
+            <th>Nombre </th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+            <th>Activo</th>
+        </tr>
+        <tr *ngFor="let item of activos">
+            <td>{{item.nombre}}</td>
+            <td>{{item.apellidos}}</td>
+            <td>{{item.edad}}</td>
+            <td>{{item.activo}}</td>
+    
+    
+        </tr>
+    
+    </table>
+    
+    <app-escritores></app-escritores>
+
+
+</div>
