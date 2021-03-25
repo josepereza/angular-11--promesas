@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { EscritorComponent } from './components/escritor/escritor.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
+import { LibrosComponent } from './components/libros/libros.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { HomeComponent } from './components/home/home.component';
     AppComponent,
     EscritoresComponent,
     EscritorComponent,
-    HomeComponent
+    HomeComponent,
+    LibrosComponent
   ],
   imports: [
     BrowserModule,
